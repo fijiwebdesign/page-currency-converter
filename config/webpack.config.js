@@ -10,6 +10,7 @@ const srcPath = path.join(projectPath, 'src');
 
 const config = {
   entry: {
+    content: path.join(srcPath, 'content', 'index.ts'),
     background: path.join(srcPath, 'background', 'index.ts'),
     options: path.join(srcPath, 'options', 'index.tsx'),
     popup: path.join(srcPath, 'popup', 'index.tsx')
