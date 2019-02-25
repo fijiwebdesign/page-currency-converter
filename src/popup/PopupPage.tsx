@@ -13,7 +13,8 @@ class PopupPage extends Component<PopupPageProps> {
     return (
       <div>
         <h1>Popup</h1>
-        <p>Some stuff here...</p>
+        <p>Debugging:</p>
+        <p>{JSON.stringify(this.props.model.url)}</p>
       </div>
     );
   }

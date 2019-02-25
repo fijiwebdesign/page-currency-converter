@@ -1,6 +1,7 @@
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ChromeExtensionReloader  = require('webpack-chrome-extension-reloader');
 
 // paths
 const projectPath = path.resolve(__dirname, '..');
@@ -68,6 +69,14 @@ const config = {
       template: path.join(srcPath, 'popup', 'index.html'),
       chunks: ['popup'],
       filename: 'popup.html'
+    }),
+    new ChromeExtensionReloader({
+      port: 9090, // Which port use to create the server
+      reloadPage: true, // Force the reload of the page also
+      entries: { // The entries used for the content/background scripts
+        //contentScript: 'content-script', // Use the entry names, not the file name or the path
+        background: 'background' // *REQUIRED
+      }
     })
   ],
   devtool: 'source-map',
