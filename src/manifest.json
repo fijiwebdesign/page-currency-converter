@@ -1,7 +1,7 @@
 {
-  "name": "My Awesome Extension",
+  "name": "Currency Converter in Page",
   "version": "1.0",
-  "description": "Make the world better",
+  "description": "Convert currencies found in the web page",
   "options_page": "options.html",
   "permissions": [
     "tabs",
