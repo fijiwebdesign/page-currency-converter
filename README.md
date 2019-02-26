@@ -1,7 +1,13 @@
-# starter-chrome-extension
+# Chrome Extension - Page Currency Converter 
+
+Finds currency amounts in pages and converts them to a given currency. 
+
+## Created with: 
+
 My starter kit for Chrome extension projects, based on React, MobX, CSS Modules and TypeScript.
 
-It provides a skeleton popup page, options page and a background page.
+It provides a skeleton content script, popup page, options page and a background page.
+Updates to the build will refresh the extension and page extension is live on. 
 
 This kit consists of the latest versions of:
 * React
@@ -13,16 +19,17 @@ This kit consists of the latest versions of:
 
 #### Build Instructions
 
-`yarn install`
-
-`yarn run build`
-
-The extension asset files are created at `/build/`.
-Load "unpacked extension" in Chrome to test it out!
-For more information on testing Chrome apps [read here](https://support.google.com/chrome/a/answer/2714278).
+`yarn build`
 
 #### Development Mode
 
-To watch for changes and automatically update the build: 
+`yarn install`
 
-`yarn run build-watch`
+`yarn watch`
+
+The extension asset files are created at `/build/`.
+Load "unpacked extension" in Chrome to test it out!
+For more information on testing Chrome apps 
+[read here](https://support.google.com/chrome/a/answer/2714278).
+
+Changes to files will trigger the extension and page to reload. 
